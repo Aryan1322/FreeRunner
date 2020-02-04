@@ -416,13 +416,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 528931523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f331af940a3bf946b1e461aedef5dd4, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f2ef84294b369e4ea731121f90f4ba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireball: {fileID: 5859542837333435346, guid: f4f0c22d2b03c6b44968c8373e6d9a92,
+  obstacle: {fileID: 5859542837333435346, guid: f4f0c22d2b03c6b44968c8373e6d9a92,
     type: 3}
   shootingSpeed: 10000
   rb2D: {fileID: 0}
+  startTimeBtwSpawn: 0.5
+  decreaseTime: 0
+  minTime: 0.6
 --- !u!4 &528931525
 Transform:
   m_ObjectHideFlags: 0
