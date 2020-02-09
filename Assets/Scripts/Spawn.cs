@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
-    public GameObject obstacle;
-    public float shootingSpeed;
-    public Rigidbody2D rb2D;
-
+    public GameObject[] obstaclePatterns;
+   
+    
 
     private float timeBtwSpawn;
     public float startTimeBtwSpawn;
@@ -18,7 +17,8 @@ public class Spawn : MonoBehaviour
     {
         if(timeBtwSpawn <= 0)
         {
-            SpawnFireBall();
+            int rand = Random.Range(0, obstaclePatterns.Length);
+            Instantiate(obstaclePatterns[rand], transform.position, Quaternion.identity);
             timeBtwSpawn = startTimeBtwSpawn;
             if(startTimeBtwSpawn > minTime)
             {
@@ -32,13 +32,6 @@ public class Spawn : MonoBehaviour
         }
     }
 
-    void SpawnFireBall()
-    {
-        GameObject fireballProject = Instantiate(obstacle, transform.position, Quaternion.identity) as GameObject;
-
-        rb2D = fireballProject.GetComponent<Rigidbody2D>();
-        rb2D.AddForce(Vector3.left * shootingSpeed * Time.deltaTime);
-
-    }
+   
 
 }

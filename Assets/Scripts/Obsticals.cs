@@ -10,17 +10,11 @@ public class Obsticals : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        SpawnFireBall();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            SpawnFireBall();
-        }
-    }
+   
     void SpawnFireBall()
     {
         GameObject fireballProject = Instantiate(fireball, transform.position, Quaternion.identity) as GameObject;
