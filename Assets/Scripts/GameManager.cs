@@ -24,12 +24,14 @@ public class GameManager : MonoBehaviour
     {
         ScoreAndDeficalty();
         Deafet();
+        score = (float)Mathf.Round(score * 100) / 100;
     }
     void ScoreAndDeficalty()
     {
         if (!pause)
         {
-            score += 1;
+            score += 1 * Time.deltaTime;
+            
         }
         if (score >= 5000)
         {
@@ -73,5 +75,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
