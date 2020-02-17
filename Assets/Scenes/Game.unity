@@ -391,8 +391,8 @@ MonoBehaviour:
   - {fileID: 1033044137443179699, guid: 0d64d988cd6bcd84f9ba30ed6eb4bef2, type: 3}
   - {fileID: 1002962145352554484, guid: a068ee59aeac5a243a06d6c238c9dad4, type: 3}
   startTimeBtwSpawn: 2
-  decreaseTime: 0.05
-  minTime: 1
+  decreaseTime: 0.09
+  minTime: 0.4
 --- !u!4 &118612969
 Transform:
   m_ObjectHideFlags: 0
@@ -439,10 +439,10 @@ RectTransform:
   m_Father: {fileID: 1729467260}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7817489, y: 0.92}
-  m_AnchorMax: {x: 0.93381166, y: 0.97}
-  m_AnchoredPosition: {x: -0.5, y: -17}
-  m_SizeDelta: {x: -3, y: 0}
+  m_AnchorMin: {x: 0.7817489, y: 0.92810255}
+  m_AnchorMax: {x: 0.90500003, y: 0.97}
+  m_AnchoredPosition: {x: 0.45999146, y: 0.32000732}
+  m_SizeDelta: {x: 0.9300003, y: -0.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &149538929
 MonoBehaviour:

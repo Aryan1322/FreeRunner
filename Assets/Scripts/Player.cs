@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
+            Debug.Log("I'm Triggered");
             dead = true;
         }
     }

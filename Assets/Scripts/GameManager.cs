@@ -24,26 +24,26 @@ public class GameManager : MonoBehaviour
     {
         ScoreAndDeficalty();
         Deafet();
-        score = (float)Mathf.Round(score * 100) / 100;
     }
     void ScoreAndDeficalty()
     {
         if (!pause)
         {
-            score += 1 * Time.deltaTime;
+            score += 5 * Time.deltaTime;
             
         }
-        if (score >= 5000)
+        if (score >= 500)
         {
             //spawn Platform
 
 
         }
-        if (score >= 15000)
+        if (score >= 1500)
         {
             //despawn the platfrom on the sides
         }
-        textScore.text = "Score: " + score;
+        textScore.text = "Score: " + (int)Mathf.Round(score);
+        ;
     }
     void Deafet()
     {
@@ -51,7 +51,8 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 0f;
             resetMenu.SetActive(true);
-            endScore.text = "Score: " + score;
+            endScore.text = "Score: " + (int)Mathf.Round(score);
+            ;
             pause = true;
         }
     }
