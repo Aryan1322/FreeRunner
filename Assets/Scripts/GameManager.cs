@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public float score;
     public Text textScore, endScore;
     public Player player;
-    public GameObject pauseMenu, resetMenu;
+    public GameObject pauseMenu, resetMenu,topPlatform,downPlatform;
     public bool pause;
     private void Start()
     {
@@ -40,7 +40,10 @@ public class GameManager : MonoBehaviour
         }
         if (score >= 1500)
         {
+            Debug.Log("I achive 1500");
             //despawn the platfrom on the sides
+            topPlatform.SetActive(false);
+            downPlatform.SetActive(false);
         }
         textScore.text = "Score: " + (int)Mathf.Round(score);
         ;
