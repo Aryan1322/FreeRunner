@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3346321780350663870}
   - component: {fileID: 2151761663451803295}
   - component: {fileID: -3483450200831337002}
+  - component: {fileID: 782595317432096042}
+  - component: {fileID: 194682015}
   m_Layer: 0
   m_Name: Platfrom
   m_TagString: Untagged
@@ -27,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546462776856955878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.61, y: -1.47, z: -5.828125}
-  m_LocalScale: {x: 24.6291, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 50, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -129,3 +131,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!114 &782595317432096042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546462776856955878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7611679f4152b4b97b2ad3409b674f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deadTimer: 8
+--- !u!114 &194682015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546462776856955878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8d89f5d8603244a90146467eb1e8e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platfromSpeed: 10

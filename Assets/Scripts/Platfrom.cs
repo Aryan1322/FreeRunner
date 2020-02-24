@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Platfrom : MonoBehaviour
 {
+    public float platfromSpeed;
     void Update()
     {
-        transform.Translate(Vector3.left * 10 * Time.deltaTime);
+        transform.Translate(Vector3.left * platfromSpeed * Time.deltaTime);
     }
 }

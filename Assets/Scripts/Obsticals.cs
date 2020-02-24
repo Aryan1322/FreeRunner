@@ -5,7 +5,7 @@ using UnityEngine;
 public class Obsticals : MonoBehaviour
 {
     public GameObject fireball;
-    public float shootingSpeed;
+    float shootingSpeed = 30000;
     public Rigidbody2D rb2D;
     // Start is called before the first frame update
     void Start()

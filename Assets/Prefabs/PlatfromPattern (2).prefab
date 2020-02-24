@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2038610060996349362}
-  - component: {fileID: 2394770406829397925}
+  - component: {fileID: 4138438080201974613}
   m_Layer: 0
   m_Name: Spawner (2)
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 7735487906769878361}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2394770406829397925
+--- !u!114 &4138438080201974613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,12 +40,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2038610060996349364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f331af940a3bf946b1e461aedef5dd4, type: 3}
+  m_Script: {fileID: 11500000, guid: 210f0a36c1bed3746b72f99c0d889c06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fireball: {fileID: 546462776856955878, guid: 0fa528837fdebbe46b7c354b80ef6d51, type: 3}
-  shootingSpeed: 10000
-  rb2D: {fileID: 526598486336539920, guid: f4f0c22d2b03c6b44968c8373e6d9a92, type: 3}
 --- !u!1 &3459249067766405428
 GameObject:
   m_ObjectHideFlags: 0

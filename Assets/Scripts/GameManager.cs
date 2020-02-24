@@ -10,12 +10,19 @@ public class GameManager : MonoBehaviour
     public float score;
     public Text textScore, endScore;
     public Player player;
-    public GameObject pauseMenu, resetMenu,topPlatform,downPlatform;
+    public GameObject pauseMenu, resetMenu,topPlatform,downPlatform,spwanPlatform;
     public bool pause;
+
+    [SerializeField]
+    private int test;
+
     private void Start()
     {
         pauseMenu.SetActive(false);
         resetMenu.SetActive(false);
+        spwanPlatform.SetActive(false);
+        topPlatform.SetActive(true);
+        downPlatform.SetActive(true);
         player = player.GetComponent<Player>();
         Time.timeScale = 1f;
     }
@@ -32,13 +39,13 @@ public class GameManager : MonoBehaviour
             score += 5 * Time.deltaTime;
             
         }
-        if (score >= 500)
+        if (score >= 50)
         {
             //spawn Platform
-
+            spwanPlatform.SetActive(true);
 
         }
-        if (score >= 1500)
+        if (score >= 100)
         {
             Debug.Log("I achive 1500");
             //despawn the platfrom on the sides
